@@ -41,6 +41,11 @@
     justify-content: center;
 
 }
+.weather-image img {
+    width: 224px;
+    height: 224px;
+    scale: 1.5;
+}
 .weather-temp {
     display: flex;
     justify-content: center;
@@ -79,5 +84,5 @@
     font-weight: 400;
 }
 .icon {
-    margin-top: 10px;
+    margin-top: 16px;
 }
