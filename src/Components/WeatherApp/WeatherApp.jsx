@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./WeatherApp.css";
 
-// import {
-//   search_icon,
-//   humidity_icon,
-//   wind_icon,
-// } from "../Assets";
-
-
+// assets
 import search_icon from '../Assets/search.png'
 import humidity_icon from '../Assets/humidity.png'
 import wind_icon from '../Assets/wind.png'
@@ -43,25 +37,7 @@ const WeatherApp = () => {
         location[0].innerHTML = data.name; 
         setWicon(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         setWiconDescription(data.weather[0].description);
-
-
-        // if(data.weather[0].icon === '01d' || data.weather[0].icon === '01n'){
-        //     setWicon(clear_icon)
-        // } else if (data.weather[0].icon === '02d' || data.weather[0].icon === '02n') {
-        //     setWicon(cloud_icon)
-        // } else if (data.weather[0].icon === '03d' || data.weather[0].icon === '03n') {
-        //     setWicon(drizzle_icon)
-        // } else if (data.weather[0].icon === '04d' || data.weather[0].icon === '04n') {
-        //     setWicon(drizzle_icon)
-        // } else if (data.weather[0].icon === '09d' || data.weather[0].icon === '09n') {
-        //     wicon(rain_icon)
-        // } else if (data.weather[0].icon === '10d' || data.weather[0].icon === '10n') {
-        //     wicon(rain_icon)
-        // } else if (data.weather[0].icon === '13d' || data.weather[0].icon === '13n') {
-        //     wicon(snow_icon)        
-        // } else {
-        //     wicon(clear_icon)
-        // }
+        
         element[0].value = ''
     }
   return (
